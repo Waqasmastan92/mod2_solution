@@ -1,1 +1,70 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+.section {
+  position: relative;
+  background-color: #f4f4f4;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  padding: 40px 15px 15px 15px;
+}
+
+.section-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #d3d3d3;
+  border: 1px solid black;
+  padding: 5px 10px;
+  font-size: 125%;
+}
+
+/* Desktop View (992px and above) */
+@media (min-width: 992px) {
+  .section {
+    float: left;
+    width: 30%;
+    margin-right: 3.33%;
+  }
+  .section:last-child {
+    margin-right: 0;
+  }
+}
+
+/* Tablet View (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+  }
+  .section:nth-child(2) {
+    margin-right: 0;
+  }
+  .section:nth-child(3) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* Mobile View (767px and below) */
+@media (max-width: 767px) {
+  .section {
+    width: 100%;
+    margin-right: 0;
+  }
+}
